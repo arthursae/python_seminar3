@@ -11,12 +11,12 @@
 
 import random
 
-n = int(input('Введите количество элементов в массиве: '))
-x = int(input('Введите искомое число: '))
-random_numbers = [random.randint(1, x * 2) for i in range(1, n + 1)]
+number_n = int(input('Введите количество элементов в массиве: '))
+number_x = int(input('Введите искомое число: '))
+random_numbers = [random.randint(1, number_x * 2) for i in range(1, number_n + 1)]
 counter = 0
 for number in random_numbers:
-    if x == number:
+    if number_x == number:
         counter += 1
 print(*random_numbers)
 print('->', counter)
