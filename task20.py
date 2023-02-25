@@ -65,7 +65,7 @@ ru = {1: ('а', 'в', 'е', 'и', 'н', 'о', 'р', 'с', 'т'),
 word = input('Введите слово: ')
 russian = english = False
 
-if is_valid_language(word,('а', 'я', 'А', 'Я')):
+if is_valid_language(word, ('а', 'я', 'А', 'Я')):
     russian = True
 elif is_valid_language(word, ('a', 'z', 'A', 'Z')):
     english = True
