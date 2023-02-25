@@ -25,7 +25,7 @@ def find_the_smallest_difference(number_x, random_numbers):
     smallest_difference = number_x
     for current_number in random_numbers:
         difference = abs(number_x - current_number)
-        if difference <= smallest_difference and current_number != number_x:
+        if difference < smallest_difference and current_number != number_x:
             smallest_difference = difference
     return smallest_difference
 
