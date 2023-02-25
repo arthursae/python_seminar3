@@ -23,13 +23,16 @@
 # ноутбук
 #     12
 
-def calc_score(word, score_data):
+def calc_score(word, score_data) -> int:
     score = 0
-    for letter in word:
-        for (scores, letters) in score_data.items():
-            if letter in letters:
-                score += scores
-    return score
+    if len(word) > 1:
+        for letter in word:
+            for (scores, letters) in score_data.items():
+                if letter in letters:
+                    score += scores
+        return score
+    else:
+        return 0
 
 
 def is_valid_language(word, alphabet_range):
